@@ -1,0 +1,55 @@
+List of commands in video	
+
+to make a controller
+
+php artisan make:controller PagesController --plain
+
+{{ $var }} {!! $var !!} - to escape special character example in php $var = '<en> Hello World </en>';
+
+@if
+
+
+@endif	
+
+@unless
+
+@endunless
+
+php artisan migrate - migrate tables into server
+
+To create table
+php artisan make:migrate create_songs_table --create="songs"
+
+To roll back db operation
+
+php artisan migrate:rollback
+
+To migrate table
+
+php artisan migrate
+
+To insert somthing in the db or other related topics
+
+php artisan tinker
+
+$name ='nika';
+
+$name . 'lucasan';
+
+DB::table('songs')->insert(['title'=>'fall','created_at'=> new DateTime,'updated_at'=>new])
+
+$song = new App\Song;
+
+$song->title = "Example title"
+
+$song-save();
+
+$song->toArray();
+$song->toJsom();
+
+App\Song::all();
+
+composer require illuminate/html
+
+
+dont forget about form builder and html
